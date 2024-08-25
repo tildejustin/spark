@@ -3,13 +3,7 @@
   "package": "me.lucko.spark.fabric.mixin",
   "compatibilityLevel": "JAVA_17",
   "client": [
-    "ClientEntityManagerAccessor",
-    "ClientWorldAccessor",
     "MinecraftClientAccessor"
-  ],
-  "mixins": [
-    "ServerEntityManagerAccessor",
-    "ServerWorldAccessor"
   ],
   "plugin": "me.lucko.spark.fabric.plugin.FabricSparkMixinPlugin"
 }

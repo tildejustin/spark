@@ -65,11 +65,11 @@ public class FabricCommandSender extends AbstractCommandSender<CommandOutput> {
     @Override
     public void sendMessage(Component message) {
         Text component = Text.Serializer.fromJson(GsonComponentSerializer.gson().serialize(message));
-        super.delegate.sendMessage(component);
+        super.delegate.sendSystemMessage(component, null);
     }
 
     @Override
     public boolean hasPermission(String permission) {
-        return this.plugin.hasPermission(super.delegate, permission);
+        return true;
     }
 }
